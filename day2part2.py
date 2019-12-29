@@ -25,6 +25,7 @@ for i in range(0, 100):
                 else:
                     print("Something went wrong.")
                 if opcode[0] == target:
+                    #I don't understand why I have to reset the noun and verb here, but apparently I do.
                     noun = opcode[1]
                     verb = opcode[2]
                     print(100*noun+verb)
